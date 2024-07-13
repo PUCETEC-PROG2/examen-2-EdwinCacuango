@@ -1,0 +1,15 @@
+{% extends "layout.html"%}
+{% block title%}Catálogo de películas{%endblock title%}
+
+{%block content%}
+<main>
+    <ul class="list-group">
+        {% for movie in movies %}
+        <li class="list-group-item">
+            <a href="{{movie.title}}">{{ movie.title | capfirst }}</a>
+            <p>Año de estreno: {{movie.release_year}}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</main>
+{%endblock content%}

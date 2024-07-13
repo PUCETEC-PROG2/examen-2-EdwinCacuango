@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'examen2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-          'NAME': 'edwin_cacuango_db',
+          'NAME': 'movies_db',
           'USER': 'postgres',
           'PASSWORD': 'pucetec',
           'HOST': 'localhost',
